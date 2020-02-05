@@ -11,13 +11,34 @@
 				<!-- Assets required for obj to load. Obj file and corresponing mtl to point to image data-->
                 <a-asset-item id = "coin" src="Coin/Coin.obj"></a-asset-item>
 				<a-asset-item id = "coin_mtl" src="Coin/Coin.mtl"></a-asset-item>
+				<a-asset-item id = "dk" src="Donkey Kong Statue/dkstatue.obj"></a-asset-item>
+				<a-asset-item id = "dk_mtl" src="Donkey Kong Statue/dkstatue.mtl"></a-asset-item>
 			</a-assets>
 			
 			<!--Syntax for creating an obj model-->
-            <a-entity obj-model="obj: #coin; mtl: #coin_mtl" scale=".5 .5 .5"
-            position="0 1 -4"></a-entity>
+            <a-entity obj-model="obj: #coin; mtl: #coin_mtl"
+			scale=".5 .5 .5"
+            position="0 1 -4"
+			animation__rotate="property: rotation; from: 0 0 90;
+			to: 0 360 90; dur: 1500; loop: true; easing: linear;"
+			></a-entity>
 			
-            <a-plane color="green" width="10" height="10" position="0 0 -4" rotation="-90 0 0 "></a-plane>
+			<a-entity obj-model="obj: #dk; mtl: "dk_mtl"
+			scale=".1 .1 .1"
+			position="-2 0 -4"
+			rotation="0 90 0"
+			></a-entity>
+			
+			<a-entity obj-model="obj: #dk; mtl: "dk_mtl"
+			scale=".1 .1 .1"
+			position="2 0 -4"
+			rotation="0 -90 0"
+			></a-entity>
+			
+            <a-plane color="#8B4513" width="10" height="10" position="0 0 -4" rotation="-90 0 0 "></a-plane>
+			<a-plane color="#BCBCBC" width="10" height="20" position="-5 10 -4" rotation="0 90 0 "></a-plane>
+			<a-plane color="#BCBCBC" width="10" height="20" position="5 10 -4" rotation="0 -90 0 "></a-plane>
+			<a-plane color="#656565" width="10" height="20" position="0 10 -9" rotation="0 0 0 "></a-plane>
 
         </a-scene>
     </body>
