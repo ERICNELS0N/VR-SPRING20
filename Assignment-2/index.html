@@ -6,9 +6,10 @@
 		<script src="https://raw.githubusercontent.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.js"></script>
 	</head>
     <body style="margin : 0px; overflow: hidden;">
-        <a-scene embedded arjs="sourceType: webcam;">
-            <a-box position="0 0.5 0" material="opacity: 0.5;"></abox>
-			<a-marker-camera preset='hiro'></a-marker-camera>	
+        <a-scene embedded arjs="debugUIEnabled: false; sourceType: webcam;">
+            <a-marker preset="custom" type="pattern" url="/Assets/pattern-upsilon.patt">
+				<a-box position="0 1 0" material="color: red; opacity: 0.5;"></abox>
+			</a-marker>
         </a-scene>
     </body>
 </html>
