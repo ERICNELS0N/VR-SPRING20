@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello World</title>
+        <script src="https://aframe.io/releases/1.0.2/aframe.min.js"></script>
+    </head>
+    <body>
+
+        <a-scene background="color: white">
+            <a-assets>
+				<!-- Assets required for obj to load. Obj file and corresponing mtl to point to image data-->
+				<a-asset-item id = "heart-container" src="HeartContainer.glb"></a-asset-item>
+			</a-assets>
+			
+			
+			<!--Syntax for creating an obj model-->
+            <a-entity gltf-model="#heart-container"
+			scale="2 2 2"
+            position="0 1 -4"
+			animation__rotate="property: rotation; from: 0 0 0;
+			to: 0 360 0; dur: 3000; loop: true; easing: linear;"
+			></a-entity>
+
+        </a-scene>
+    </body>
+</html>
