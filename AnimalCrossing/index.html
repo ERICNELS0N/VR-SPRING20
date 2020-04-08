@@ -7,7 +7,6 @@
     <body>
 
         <a-scene>
-			<a-mixin id="orbit" animation="property: rotation; loop: true; to: 0 360 0; dur: 40000; easing: linear;"></a-mixin>
 			
             <a-assets>
 				<!-- Assets required for obj to load. Obj file and corresponing mtl to point to image data-->
@@ -27,7 +26,6 @@
 			></a-entity>
 			
 			<a-entity gltf-model="#bells"
-			mixin="orbit"
 			scale="3 3 3"
 			position="4 1 -10"
 			animation__rotate="property: rotation; from: 0 0 0;
@@ -35,7 +33,6 @@
 			></a-entity>
 			
 			<a-entity gltf-model="#cherry"
-			mixin="orbit"
 			scale="3 3 3"
 			position="-4 1 -10"
 			animation__rotate="property: rotation; from: 0 0 0;
@@ -43,7 +40,6 @@
 			></a-entity>
 			
 			<a-entity gltf-model="#fossil"
-			mixin="orbit"
 			scale="3 3 3"
 			position="0 5 -10"
 			animation__rotate="property: rotation; from: 0 0 0;
@@ -51,7 +47,6 @@
 			></a-entity>
 			
 			<a-entity gltf-model="#wasp"
-			mixin="orbit"
 			scale="3 3 3"
 			position="0 -3 -10"
 			animation__rotate="property: rotation; from: 0 0 0;
