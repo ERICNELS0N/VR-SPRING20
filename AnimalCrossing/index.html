@@ -19,11 +19,16 @@
 			</a-assets>
 			<a-sky src="#skybox"></a-sky>
 			
-			<!--Syntax for creating an obj model-->
+			
+			
 			<a-entity gltf-model="#villager"
 			scale="7 7 7"
 			position="0 1 -10"
 			></a-entity>
+			
+			<a-entity geometry="primitive: plane;
+			animation__rotate="property: rotation; from: 0 0 0;
+			to: 360 0 0; dur: 4000; loop: true; easing: linear;"">
 			
 			<a-entity gltf-model="#bells"
 			scale="3 3 3"
@@ -53,6 +58,7 @@
 			to: 0 360 0; dur: 1200; loop: true; easing: linear;"
 			></a-entity>
 
+			</a-entity>
 
         </a-scene>
     </body>
