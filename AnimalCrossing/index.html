@@ -12,28 +12,36 @@
 				<a-asset-item id = "bells" src="assets/Bell Bag.glb"></a-asset-item>
 				<a-asset-item id = "cherry" src="assets/Cherry.glb"></a-asset-item>
 				<a-asset-item id = "fossil" src="assets/Fossil.glb"></a-asset-item>
+				<a-asset-item id = "wasp" src="assets/Wasp Nest.glb"></a-asset-item>
 			</a-assets>
 			
 			<!--Syntax for creating an obj model-->
 			<a-entity gltf-model="#bells"
 			scale="3 3 3"
-			position="0 0 -10"
+			position="2 0 -10"
 			animation__rotate="property: rotation; from: 0 0 0;
 			to: 0 360 0; dur: 1500; loop: true; easing: linear;"
 			></a-entity>
 			
 			<a-entity gltf-model="#cherry"
 			scale="3 3 3"
-			position="-5 0 -10"
+			position="-2 0 -10"
 			animation__rotate="property: rotation; from: 0 0 0;
 			to: 0 360 0; dur: 1000; loop: true; easing: linear;"
 			></a-entity>
 			
 			<a-entity gltf-model="#fossil"
 			scale="3 3 3"
-			position="5 0 -10"
+			position="0 2 -10"
 			animation__rotate="property: rotation; from: 0 0 0;
 			to: 0 360 0; dur: 2000; loop: true; easing: linear;"
+			></a-entity>
+			
+			<a-entity gltf-model="#wasp"
+			scale="3 3 3"
+			position="0 -2 -10"
+			animation__rotate="property: rotation; from: 0 0 0;
+			to: 0 360 0; dur: 1500; loop: true; easing: linear;"
 			></a-entity>
 
 
